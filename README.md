@@ -1,3 +1,32 @@
+# Coding Challance React Todo List
+
+This react coding challenge can be completed in your own time but you don't need to spend more than 1/2 hours to complete it. **We're looking for quality code not every single feature checked off, if you run out of time, commit what you have done and send it in with a note.**
+
+![Example Todo List](./assets/example-screenshot.webp)
+
+1. Fork this repository to your own GitHub account.
+2. Using the bootstrapped Create React App already set up in here, build a simple todo list app.
+3. Check off all of the features below and add a bonus feature if you have time.
+4. Commit your code, push it up and create a pull request back to this repository for review.
+
+*Any questions, feel free to ask.* 
+## Core Features
+
+- [ ] Add a checklist item to the list
+- [ ] Remove a checklist item from the list
+- [ ] Mark checklist items and complete and incomplete
+### Bonus points:
+
+- [ ] Spliting your coding into logical, DRY, nested components
+- [ ] Define your PropTypes
+- [ ] Build out 1 or 2 JEST tests for core parts of your work
+## Tips
+
+- Use only [Functional Components](https://reactjs.org/docs/components-and-props.html#function-and-class-components).
+- Checklist items only need to be stored in local application state, no need to use backend a backend/API/advanced state for this project.
+- You can use a UI framework like [Material UI](https://material-ui.com/) or [React Bootstrap](https://react-bootstrap.github.io/).
+
+Good luck! Ben @ Indie.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
