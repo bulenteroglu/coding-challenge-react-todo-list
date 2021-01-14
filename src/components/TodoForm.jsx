@@ -6,7 +6,9 @@ const TodoForm = ({ onSubmit }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    onSubmit({ id: Date.now(), input: input });
+    onSubmit({ id: Date.now(), input: input, isCompleted: false });
+
+    setInput('');
   };
 
   return (

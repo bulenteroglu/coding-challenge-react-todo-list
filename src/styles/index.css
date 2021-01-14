@@ -76,34 +76,32 @@ select {
     scroll-behavior: auto !important;
   }
 }
-Breaking it down
-We start with box-sizing. I just flat out reset all elements and pseudo-elements to use box-sizing: border-box.
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-Some people think that pseudo-elements should inherit box sizing, but I think that’s silly. If you want to use a different box-sizing value, set it explicitly—at least that’s what I do, anyway. I wrote about box-sizing more over on CSS From Scratch.
-/* Remove default padding */
-ul[class],
-ol[class] {
-  padding: 0;
+
+.todo-list {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
 }
 
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-  margin: 0;
+.todo-item {
+  margin-top: 1rem;
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  padding: 0.2rem 1rem;
+  border-radius: 12px;
+}
+
+.todo-text {
+  margin-left: 1rem;
+}
+
+.complete-item {
+  text-decoration: line-through;
+}
+
+.todo-trash {
+  margin-left: auto;
+  width: 1.5rem;
 }
