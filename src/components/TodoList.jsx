@@ -1,13 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import TodoForm from './TodoForm.jsx';
 
 const TodoList = () => {
-  const handleFormSubmit = () => {};
+  const [todos, setTodos] = useState([]);
+  const addTodo = (todo) => {
+    const newArray = [todo, ...todos];
+
+    setTodos(newArray);
+  };
+
+  console.log(...todos);
 
   return (
     <div>
       Todo App
-      <TodoForm />
+      <TodoForm onSubmit={addTodo} />
     </div>
   );
 };

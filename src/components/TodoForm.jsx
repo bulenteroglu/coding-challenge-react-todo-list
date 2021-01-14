@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 
-const TodoForm = ({}) => {
+const TodoForm = ({ onSubmit }) => {
   const [input, setInput] = useState('');
 
-  const onSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(input);
+
+    onSubmit({ id: Date.now(), input: input });
   };
 
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={handleSubmit}>
       <input
         value={input}
         onChange={(e) => setInput(e.target.value)}
