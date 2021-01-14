@@ -5,7 +5,7 @@ import TodoForm from './TodoForm.jsx';
 const TodoList = () => {
   const [todos, setTodos] = useState([]);
   const addTodo = (todo) => {
-    const newArray = [todo, ...todos];
+    const newArray = [...todos, todo];
 
     setTodos(newArray);
   };
