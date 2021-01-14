@@ -101,7 +101,23 @@ select {
   text-decoration: line-through;
 }
 
+.todo-button {
+  margin-left: 1rem;
+  border-radius: 12px;
+  border: none;
+  background-color: lightblue;
+  padding: 0.2rem 1rem;
+}
+
 .todo-trash {
   margin-left: auto;
   width: 1.5rem;
+}
+
+.todo-edit {
+  width: 1.5rem;
+}
+
+.update {
+  background-color: lightgreen;
 }

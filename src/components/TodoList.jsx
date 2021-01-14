@@ -25,9 +25,17 @@ const TodoList = () => {
     setTodos(updatedTodos);
   };
 
+  const updateTodo = (todoId, newValue) => {
+    setTodos((prev) =>
+      prev.map((item) => (item.id === todoId ? newValue : item))
+    );
+  };
+
   return (
     <div>
       Todo App
+      <br />
+      <span>Amount of Todos {todos.length}</span>
       <TodoForm onSubmit={addTodo} />
       {todos.map((todo, i) => (
         <Todo
@@ -35,6 +43,7 @@ const TodoList = () => {
           todo={todo}
           completeTodo={completeTodo}
           removeTodo={removeTodo}
+          updateTodo={updateTodo}
         />
       ))}
     </div>
